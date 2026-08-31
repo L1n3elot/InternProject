@@ -6,4 +6,4 @@ Steps to run the project:
 2. If needed, type cd and the path to where the files are located.
 3. Execute the task search by typing python task_search.py
 4. It will then prompt you to enter a job title
-5. Enter any job title
+5. Enter any job title and it will print a list of tasks

@@ -1,5 +1,5 @@
 # InternProject
-The project will tell the user to enter a job title. Once a title is entered, it will print a very detailed list of no more than 40 tasks for that job, including its importance and category.
+The project will tell the user to enter a job title. Once a title is entered, it will print a list of no more than 40 detailed tasks for that job, including its importance and category.
 
 Steps to run the project:
 1. Open the command prompt and paste myfirstproject\Scripts\activate to activate the virtual environment.

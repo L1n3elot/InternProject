@@ -1,0 +1,9 @@
+{
+    "automation_feasibility_score": 2,
+    "quality_confidence_score": 2,
+    "retention_reason_code": "capability",
+    "justification": "While automated cooking appliances exist, AI currently lacks the multi-sensory dexterity, dynamic real-time adaptation, and nuanced taste-testing capabilities required to consistently replicate the artisanal and creative aspects of human culinary skill.",
+    "input tokens": 65,
+    "output tokens": 90,
+    "total tokens": 155
+}

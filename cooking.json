@@ -1,0 +1,10 @@
+{
+    "automation_feasibility_score": 1,
+    "quality_confidence_score": 1,
+    "retention_reason_code": "capability",
+    "justification": "AI lacks the physical embodiment, sensory perception, and dexterity required to manipulate physical ingredients and dynamically adapt cooking techniques in a real-world kitchen environment.",
+    "input tokens": 65,
+    "output tokens": 77,
+    "total tokens": 142,
+    "date created": "2026-09-24T01:57:40Z"
+}

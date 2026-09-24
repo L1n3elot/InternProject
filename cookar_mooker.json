@@ -1,0 +1,10 @@
+{
+    "automation_feasibility_score": 1,
+    "quality_confidence_score": 1,
+    "retention_reason_code": "capability",
+    "justification": "Because 'cookar mooker' is an undefined, nonsensical phrase with no known procedural definition, an AI lacks the foundational semantic capability to comprehend or execute the task.",
+    "input tokens": 68,
+    "output tokens": 82,
+    "total tokens": 150,
+    "date created": "2026-09-24T02:14:47Z"
+}

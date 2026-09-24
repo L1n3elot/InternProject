@@ -1,0 +1,98 @@
+text = 'Read food order slips or receive verbal instructions as to food required by patron, and prepare and cook food according to instructions'
+
+longtext = 'In a structured JSON only response with no preamble and no code fences, give me the automation feasibility and quality confidence score from 1-5, the retention reason code (capability/capacity/regulatory/accountability/judgment), and a one-sentence justification regarding AI being able to replace a human to Read food order slips or receive verbal instructions as to food required by patron, and prepare and cook food according to instructions'
+
+inputResult = (len(text) / 4) + (len(longtext) / 4)
+
+print('token input token count ' + str(inputResult) + '\n')
+
+outputText = '{"task": "Read food order slips or receive verbal instructions as to food required by patron, and prepare and cook food according to instructions", "automation_feasibility_score": 2, "quality_confidence_score": 2, "retention_reason_code": "capability", "justification": "Current robotics and sensing lack the dexterity, adaptability, and multisensory judgment (texture, smell, visual doneness cues, real-time recipe adjustment) needed to reliably prepare varied dishes to order across unpredictable kitchen conditions."}'
+
+outputResult = len(outputText) / 4
+
+
+
+print('token output count ' + str(outputResult))
+
+full_run_input = (inputResult) * 40
+full_run_output =  (outputResult) * 40
+print('(inputResult) * 40 = ' + str(full_run_input))
+print('(outputResult) * 40 = ' + str(full_run_output) + '\n')
+
+million_token_rate = 1000000
+
+div_input = full_run_input / million_token_rate
+div_output = full_run_output / million_token_rate
+
+
+
+input_mod1 = 0.30
+input_mod2 = 0.75
+input_mod3 = 2
+input_mod4 = 1
+output_mod1 = 2.50
+output_mod2 = 3.75
+output_mod3 = 10
+output_mod4 = 5
+
+input_cost1 = div_input * input_mod1
+input_cost2 = div_input * input_mod2
+input_cost3 = div_input * input_mod3
+input_cost4 = div_input * input_mod4
+output_cost1 = div_output * output_mod1
+output_cost2 = div_output * output_mod2
+output_cost3 = div_output * output_mod3
+output_cost4 = div_output * output_mod4
+
+
+print(f'input Gemini 3.5 Flash-Lite: ${input_cost1:.2f}')
+print(f'output Gemini 3.5 Flash-Lite: ${output_cost1:.2f}')
+print(f'input Gemini 3.6 Flash: ${input_cost2:.2f}')
+print(f'output Gemini 3.6 Flash: ${output_cost2:.2f}')
+print(f'input Claude Sonnet 5: ${input_cost3:.2f}')
+print(f'output Claude Sonnet 5: ${output_cost3:.2f}')
+print(f'input Claude Haiku 4.5: ${input_cost4:.2f}')
+print(f'output Claude Haiku 4.5: ${output_cost4:.2f}\n')
+
+total_cost1 = input_cost1 + output_cost1
+total_cost2 = input_cost2 + output_cost2
+total_cost3 = input_cost3 + output_cost3
+total_cost4 = input_cost4 + output_cost4
+print('------------------------------------------------')
+print('Cost per run by model: Represents the Production Run Cost\n')
+print(f'Gemini 3.5 Flash-Lite: ${total_cost1:.2f}')
+print(f'Gemini 3.6 Flash: ${total_cost2:.2f}')
+print(f'Claude Sonnet 5: ${total_cost3:.2f}')
+print(f'Claude Haiku 4.5: ${total_cost4:.2f}')
+print('------------------------------------------------')
+
+dev_runs = 15
+
+dev_cost1 = dev_runs*total_cost1
+dev_cost2 = dev_runs*total_cost2
+dev_cost3 = dev_runs*total_cost3
+dev_cost4 = dev_runs*total_cost4
+print('Cost of the development phase for\n')
+print(f'Gemini 3.5 Flash-Lite: ${dev_cost1:.2f}')
+print(f'Gemini 3.6 Flash: ${dev_cost2:.2f}')
+print(f'Claude Sonnet 5: ${dev_cost3:.2f}')
+print(f'Claude Haiku 4.5: ${dev_cost4:.2f}')
+
+print('------------------------------------------------')
+
+print('Cost of the development phase for with 50% buffer\n')
+print(f'Gemini 3.5 Flash-Lite: ${dev_cost1*1.5:.2f}')
+print(f'Gemini 3.6 Flash: ${dev_cost2*1.5:.2f}')
+print(f'Claude Sonnet 5: ${dev_cost3*1.5:.2f}')
+print(f'Claude Haiku 4.5: ${dev_cost4*1.5:.2f}')
+
+
+
+
+
+
+
+
+
+
+

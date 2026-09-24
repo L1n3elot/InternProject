@@ -13,4 +13,4 @@ The project will tell the user to enter a job title. Once a title is entered, it
 # For running Phase 2
 1. Execute the AI Scoring layer by typing python cash_test.py
 2. It will then prompt you to enter a task description
-3. Enter any job description and it will give you a structured JSON response with scores, the number of input tokens used, number of output, tokens, total tokens, and teh creation date, along with caching the data in a json file if it doesnt already exist
+3. Enter any job description and it will give you a structured JSON response with scores, the number of input tokens used, number of output, tokens, total tokens, and the creation date, along with caching the data in a json file if it doesnt already exist

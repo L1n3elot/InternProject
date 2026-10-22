@@ -433,7 +433,7 @@ def main():
                     else:
                         print(f"Failed to score task ID {task.get('id')}. Skipping.")
     except Exception as e:
-        print('An Error occured: ' + e)
+        print('An Error occured: ', e)
         
             
 if __name__ == "__main__":

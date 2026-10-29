@@ -14,4 +14,4 @@ Steps to begin running any project phase:
 # How to run the phase 3 project
 1. Execute the Cost Comparison Engine by pasting in python cost_compare.py
 2. Input the employee fully-loaded annual cost and estimated hours per task per week when prompted
-3. The results will display the cost comparison table ans the residual view
+3. The results will display the cost comparison table and the residual view

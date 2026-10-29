@@ -11,7 +11,8 @@ Steps to begin running any project phase:
 5. Enter whether or not you would like to override the scores and reason codes. If yes, it will prompt you to enter each change. If no, it will return None and will save the results
 6. The same prompt will continue to appear until the loop finishes
 
-demo:
+Demo:
+
 https://livespcollege-my.sharepoint.com/:v:/g/personal/amedin20_live_spcollege_edu/IQDxPB8-9k7tRo0UlrZMMf-JATOKg_0jtzPGw5rjT0gw9cY?referrer=Outlook.Web&referrerScenario=email-linkwithembed
 
 # How to run the phase 3 project

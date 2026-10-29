@@ -10,6 +10,8 @@ Steps to begin running any project phase:
 4. After entering the job titles, you will see a task based on the job title, the AI response, and the number of tokens used
 5. Enter whether or not you would like to override the scores and reason codes. If yes, it will prompt you to enter each change. If no, it will return None and will save the results
 6. The same prompt will continue to appear until the loop finishes
+demo:
+
 https://livespcollege-my.sharepoint.com/:v:/g/personal/amedin20_live_spcollege_edu/IQDxPB8-9k7tRo0UlrZMMf-JATOKg_0jtzPGw5rjT0gw9cY?referrer=Outlook.Web&referrerScenario=email-linkwithembed
 
 # How to run the phase 3 project
